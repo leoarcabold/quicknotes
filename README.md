@@ -1,6 +1,8 @@
-# QuickNotes - Sistema de Anotações
+![QuickNotes Logo](https://via.placeholder.com/150)
 
-Sistema simples de gerenciamento de anotações pessoais desenvolvido em Java e utilizando SQLite como banco de dados.
+# QuickNotes - Sistema de Anotações com SQLite
+
+Um aplicativo Java simples para gerenciar anotações pessoais, categorias e lembretes utilizando SQLite como banco de dados.
 
 ## 📌 Índice
 
@@ -22,11 +24,19 @@ Sistema simples de gerenciamento de anotações pessoais desenvolvido em Java e 
 
 - **DBConnection:** Classe para gerenciar a conexão com o banco de dados.
 - **AnotacaoDAO:** Fornece métodos para operações CRUD com anotações.
+- **CategoriaDAO:** Permite a inserção e listagem de categorias.
+- **LembreteDAO:** Permite a inserção e listagem de lembretes.
 
 ## ✨ Funcionalidades
 
-- **Listar Anotações:** Visualize todas as suas anotações em uma lista.
-  
+### CategoriaDAO:
+- **Insert:** Adiciona uma nova categoria ao banco de dados.
+- **FindAll:** Retorna uma lista de todas as categorias.
+
+### LembreteDAO:
+- **Insert:** Adiciona um novo lembrete.
+- **FindAllReminders:** Retorna uma lista de todos os lembretes.
+
 *(Funcionalidades adicionais de CRUD podem ser implementadas no futuro.)*
 
 ## 🛠️ Pré-requisitos
